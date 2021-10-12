@@ -1,16 +1,25 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@layer utilities {
+  p {
+    @apply text-header-gray;
+  }
 
-* {
-  box-sizing: border-box;
+  .scroll__left {
+    scrollbar-width: none;
+  }
+
+  .website_container {
+    @apply bg-header-yellow cursor-pointer px-10 py-10 sm:px-12 sm:py-12 md:px-14 md:py-14 overflow-hidden flex justify-center items-center rounded-xl relative;
+  }
+
+  .website_box {
+    @apply h-full w-full bg-gray-500 absolute px-2 flex flex-col items-center justify-center;
+  }
+  .website_text {
+    @apply text-sm lg:text-lg text-center h-full text-white;
+  }
 }
