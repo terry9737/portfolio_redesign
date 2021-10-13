@@ -15,9 +15,7 @@ const AsiderLeft = () => {
   const { isLeftOn } = useContext(DataContext);
   const { width } = useWindowSize();
   useEffect(() => {
-    if (width > 1279) {
-      controls.start("visible");
-    } else if (isLeftOn) {
+    if (isLeftOn || width > 1279) {
       controls.start("visible");
     } else if (!isLeftOn) {
       controls.start("hidden");

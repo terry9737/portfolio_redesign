@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <main className="bg-header-default">
       <Container>
-        <div className="flex flex-col items-center justify-center py-7 overflow-hidden">
-          <h1 className="text-4xl sm:text-5xl font-bold px-20 sm:px-20 leading-tight z-20 text-center">
+        <div className="flex flex-col items-center justify-center py-7 overflow-hidden shadow-md">
+          <h1 className="text-4xl sm:text-5xl font-bold px-16 sm:px-20 leading-tight z-20 text-center">
             I’m Gorgos Adrian{" "}
             <span className="text-header-yellow z-20">Font – End</span>{" "}
             Developer

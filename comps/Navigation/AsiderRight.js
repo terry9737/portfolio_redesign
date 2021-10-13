@@ -9,24 +9,21 @@ import { useWindowSize } from "../hooks/useWindowSize";
 const AsiderRight = () => {
   const { isRightOn } = useContext(DataContext);
   const { width } = useWindowSize();
-  console.log(width);
+  const controls = useAnimation();
+
   useEffect(() => {
-    if (width > 1279) {
-      console.log("daaaa");
-    } else if (isRightOn) {
+    if (isRightOn || width > 1279) {
       controls.start("active");
     } else if (!isRightOn) {
       controls.start("hidden");
     }
-  }, [isRightOn]);
-
-  const controls = useAnimation();
+  });
   return (
     <motion.nav
       variants={slideRightVariants}
       initial="hidden"
       animate={controls}
-      className="bg-red-700 w-20 h-screen fixed xl:static right-0 top-0 z-30 pt-3 pl-2"
+      className="bg-red-700 w-20 h-screen fixed xl:static right-0 top-0 z-30 pt-3 pl-2 shadow-md"
     >
       <AsiderClose controls={controls} />
       <AsiderIcons />

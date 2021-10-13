@@ -1,6 +1,4 @@
 import { HiMenu, HiMoon, HiOutlineDotsVertical } from "react-icons/hi";
-import AsiderRight from "../comps/Navigation/AsiderRight";
-import AsiderLeft from "../comps/Navigation/AsiderLeft";
 import { useContext } from "react";
 import { DataContext } from "../comps/context/Context";
 const Navigation = () => {
@@ -24,8 +22,6 @@ const Navigation = () => {
             <HiOutlineDotsVertical className="text-3xl text-navbar-default" />
           </li>
         </ul>
-        {/* <AsiderRight />
-        <AsiderLeft /> */}
       </nav>
       <aside className="hidden 2xl:block"></aside>
     </>

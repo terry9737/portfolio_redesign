@@ -35,7 +35,7 @@ const WebSites = () => {
   return (
     <main className="bg-header-default pt-5">
       <Container>
-        <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 auto-rows-f gap-10 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-10 p-4">
           {/* one */}
           <motion.section
             onHoverStart={() => {

@@ -4,7 +4,7 @@ import { DataContext } from "../../context/Context";
 const AsiderClose = ({ controls }) => {
   const { setIsLeftOn, isLeftOn } = useContext(DataContext);
   return (
-    <div className="text-3xl flex justify-end 2xl:hidden">
+    <div className="text-3xl flex justify-end xl:hidden">
       <HiOutlineX
         className="cursor-pointer"
         onClick={() => {

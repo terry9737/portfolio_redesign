@@ -9,6 +9,7 @@ import {
 } from "react-icons/hi";
 import { useContext } from "react";
 import { DataContext } from "../../context/Context";
+import Link from "next/dist/client/link";
 
 const AsiderIcons = () => {
   const { selected, clickHandler } = useContext(DataContext);
@@ -51,7 +52,9 @@ const AsiderIcons = () => {
               className={`h-10 w-10 rounded-full flex justify-center items-center cursor-pointer bg-header-yellow
               }`}
             >
-              {icon.icon}
+              <Link href="/Header">
+                <a>{icon.icon}</a>
+              </Link>
             </motion.li>
           );
         } else {
