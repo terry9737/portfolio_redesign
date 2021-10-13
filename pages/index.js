@@ -5,11 +5,7 @@ import InnerContainer from "../comps/UI/InnerContainer";
 export default function Home() {
   return (
     <>
-      <InnerContainer>
-        <AsiderLeft />
-        <Content />
-        <AsiderRight />
-      </InnerContainer>
+      <Content />
     </>
   );
 }

@@ -3,7 +3,7 @@ import Container from "../comps/UI/Container";
 
 const Header = () => {
   return (
-    <main className="bg-header-default">
+    <main className="bg-header-default mx-auto">
       <Container>
         <div className="flex flex-col items-center justify-center py-7 overflow-hidden shadow-md">
           <h1 className="text-4xl sm:text-5xl font-bold px-16 sm:px-20 leading-tight z-20 text-center">

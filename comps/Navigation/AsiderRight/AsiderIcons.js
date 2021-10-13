@@ -17,26 +17,27 @@ const AsiderIcons = () => {
     {
       icon: <HiOutlineHome className="text-2xl" />,
       id: 0,
+      path: "/",
     },
     {
       icon: <HiOutlineDocumentText className="text-2xl" />,
       id: 1,
-    },
-    {
-      icon: <HiOutlineUser className="text-2xl" />,
-      id: 2,
+      path: "/Education",
     },
     {
       icon: <HiBriefcase className="text-2xl" />,
       id: 3,
+      path: "/Work",
     },
     {
-      icon: <HiOutlinePencil className="text-2xl" />,
-      id: 4,
+      icon: <HiOutlineUser className="text-2xl" />,
+      id: 2,
+      path: "/",
     },
     {
       icon: <HiAnnotation className="text-2xl" />,
       id: 5,
+      path: "/",
     },
   ];
   return (
@@ -52,7 +53,7 @@ const AsiderIcons = () => {
               className={`h-10 w-10 rounded-full flex justify-center items-center cursor-pointer bg-header-yellow
               }`}
             >
-              <Link href="/Header">
+              <Link href={icon.path}>
                 <a>{icon.icon}</a>
               </Link>
             </motion.li>

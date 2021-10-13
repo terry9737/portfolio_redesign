@@ -5,26 +5,15 @@ import Languages from "../../pages/Languages";
 import Education from "../../pages/Education";
 import Work from "../../pages/Work";
 import Footer from "../footer/footer";
+import Services from "../../pages/Services";
 const Content = () => {
   return (
     <>
-      <div className="flex flex-col mx-auto">
-        {/* <Link href="/">
-          <a>
-            <Header />
-            <WebSites />
-            <Languages />
-          </a>
-        </Link>
-        <Link href="/work">
-          <a>
-            <Education />
-            <Work />
-          </a>
-        </Link> */}
+      <div className="flex flex-col mx-auto h-full overflow-scroll scroll_none">
         <Header />
-        <Education />
-        <Footer />
+        {/* <WebSites /> */}
+        {/* <Languages />  */}
+        <Services />
       </div>
     </>
   );
