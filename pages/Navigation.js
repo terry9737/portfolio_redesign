@@ -24,13 +24,10 @@ const Navigation = () => {
             <HiOutlineDotsVertical className="text-3xl text-navbar-default" />
           </li>
         </ul>
-        <AsiderRight />
-        <AsiderLeft />
+        {/* <AsiderRight />
+        <AsiderLeft /> */}
       </nav>
-      <aside className="hidden 2xl:block">
-        <AsiderLeft on={true} />
-        <AsiderRight on={true} />
-      </aside>
+      <aside className="hidden 2xl:block"></aside>
     </>
   );
 };

@@ -9,26 +9,26 @@ import AsiderBio from "./AsiderLeft/AsiderBio";
 import { slideLeftVariants } from "../animations/Variants";
 import AsiderLanguages from "./AsiderLeft/AsiderLanguages";
 import styled from "styled-components";
-// import cv from "./cv.pdf";
-const AsiderLeft = ({ on }) => {
+import { useWindowSize } from "../hooks/useWindowSize";
+const AsiderLeft = () => {
   const controls = useAnimation();
   const { isLeftOn } = useContext(DataContext);
+  const { width } = useWindowSize();
   useEffect(() => {
-    if (on) {
+    if (width > 1279) {
       controls.start("visible");
     } else if (isLeftOn) {
       controls.start("visible");
     } else if (!isLeftOn) {
       controls.start("hidden");
     }
-  }, [isLeftOn]);
-
+  });
   return (
     <motion.nav
       variants={slideLeftVariants}
       initial="hidden"
       animate={controls}
-      className="fixed top-0 left-0 w-60 sm:w-5/12 md:w-5/12 lg:w-4/12 xl:w-2/12 px-5 py-5 bg-white shadow-2xl h-screen"
+      className="fixed xl:static top-0 left-0 z-30 w-60 sm:w-5/12 md:w-5/12 lg:w-4/12 xl:w-3/12 px-5 py-5 bg-white shadow-2xl h-screen"
     >
       <AsiderClose controls={controls} />
       <AsiderHeader />

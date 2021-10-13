@@ -14,6 +14,9 @@ module.exports = {
           gray: "#767676",
         },
       },
+      maxWidth: {
+        "9xl": "1440px",
+      },
     },
   },
   variants: {

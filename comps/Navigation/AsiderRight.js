@@ -5,13 +5,14 @@ import { DataContext } from "../context/Context";
 import { useEffect } from "react";
 import AsiderIcons from "./AsiderRight/AsiderIcons";
 import AsiderClose from "./AsiderRight/AsiderClose";
-
-const AsiderRight = ({ on }) => {
+import { useWindowSize } from "../hooks/useWindowSize";
+const AsiderRight = () => {
   const { isRightOn } = useContext(DataContext);
-
+  const { width } = useWindowSize();
+  console.log(width);
   useEffect(() => {
-    if (on) {
-      controls.start("active");
+    if (width > 1279) {
+      console.log("daaaa");
     } else if (isRightOn) {
       controls.start("active");
     } else if (!isRightOn) {
@@ -25,7 +26,7 @@ const AsiderRight = ({ on }) => {
       variants={slideRightVariants}
       initial="hidden"
       animate={controls}
-      className="bg-red-700 w-20 h-screen fixed right-0 top-0 z-30 pt-3 pl-2"
+      className="bg-red-700 w-20 h-screen fixed xl:static right-0 top-0 z-30 pt-3 pl-2"
     >
       <AsiderClose controls={controls} />
       <AsiderIcons />

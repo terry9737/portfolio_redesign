@@ -6,7 +6,7 @@ const AsiderClose = ({ controls }) => {
   const { setIsRightOn, isRightOn } = useContext(DataContext);
   return (
     <span
-      className="cursor-pointer lg:hidden"
+      className="cursor-pointer xl:hidden"
       onClick={() => {
         setIsRightOn(!isRightOn);
         controls.start("hidden");
