@@ -1,10 +1,10 @@
 import { createContext } from "react";
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
 
 export const DataContext = createContext({});
 
 const DataProvider = ({ children }) => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState(0);
 
   const clickHandler = (id) => {
     setSelected(id);

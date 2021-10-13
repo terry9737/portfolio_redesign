@@ -9,10 +9,10 @@ import {
 } from "react-icons/hi";
 import { useContext } from "react";
 import { DataContext } from "../../context/Context";
-import Link from "next/dist/client/link";
-
+import { useRouter } from "next/dist/client/router";
 const AsiderIcons = () => {
   const { selected, clickHandler } = useContext(DataContext);
+  const router = useRouter();
   const icons = [
     {
       icon: <HiOutlineHome className="text-2xl" />,
@@ -40,30 +40,33 @@ const AsiderIcons = () => {
       path: "/",
     },
   ];
+  console.log(selected);
   return (
     <ul className="flex flex-col h-screen items-center justify-center space-y-10">
       {icons.map((icon) => {
         if (icon.id === selected) {
           return (
             <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
               key={icon.id}
-              onClick={() => clickHandler(icon.id)}
+              onClick={() => {
+                router.push(icon.path);
+                clickHandler(icon.id);
+              }}
               className={`h-10 w-10 rounded-full flex justify-center items-center cursor-pointer bg-header-yellow
-              }`}
+            }`}
             >
-              <Link href={icon.path}>
-                <a>{icon.icon}</a>
-              </Link>
+              {icon.icon}
             </motion.li>
           );
         } else {
           return (
             <li
               key={icon.id}
-              onClick={() => clickHandler(icon.id)}
-              className={`h-10 w-10 rounded-full flex justify-center items-center cursor-pointer`}
+              onClick={() => {
+                router.push(icon.path);
+                clickHandler(icon.id);
+              }}
+              className={`h-10 w-10 rounded-full flex justify-center items-center cursor-pointer hover:bg-header-yellow`}
             >
               {icon.icon}
             </li>

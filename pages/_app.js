@@ -8,7 +8,7 @@ import Footer from "../comps/footer/footer";
 function MyApp({ Component, pageProps }) {
   return (
     <DataProvider>
-      <div className="bg-header-default">
+      <div className="bg-header-default dark:bg-header-yellow">
         <Navigation />
         <InnerContainer>
           <AsiderLeft />
