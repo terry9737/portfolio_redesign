@@ -2,10 +2,9 @@ import Header from "../../pages/Header";
 import WebSites from "../../pages/Websites";
 import Link from "next/link";
 import Languages from "../../pages/Languages";
-import Education from "../../pages/Education";
-import Work from "../../pages/Work";
 import Footer from "../footer/footer";
 import Services from "../../pages/Services";
+import Experience from "../../pages/Experience";
 const Content = () => {
   return (
     <>
@@ -14,8 +13,8 @@ const Content = () => {
         <WebSites />
         {/* <Languages /> */}
         <Services />
-        <Education />
-        <Work />
+        <Experience />
+        <Experience works />
       </div>
     </>
   );

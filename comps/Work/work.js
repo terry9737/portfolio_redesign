@@ -24,3 +24,8 @@ export const work = [
     id: 2,
   },
 ];
+
+export const workTitle = {
+  title: "Work History",
+  body: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum",
+};

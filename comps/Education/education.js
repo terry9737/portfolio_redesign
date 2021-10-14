@@ -24,3 +24,7 @@ export const education = [
     id: 2,
   },
 ];
+export const educationTitle = {
+  title: "Education",
+  body: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do ametsint. Velit officia consequat duis enim velit mollit. lorem ipsum",
+};

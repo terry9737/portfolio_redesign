@@ -11,21 +11,27 @@ const Services = () => {
             return (
               <div className="flip-card" key={item.id}>
                 <div className="flip-card-inner">
-                  <div className="flip-card-front">
+                  <div className="flip-card-front dark:bg-dark-main">
                     <span className="flex flex-col justify-center items-center p-7 h-full">
                       {/* {item.icon} */}
                       <Image src={item.icon} alt="img" />
-                      <p className="mt-5 font-semibold">{item.name}</p>
+                      <p className="mt-5 font-semibold dark:text-gray-200">
+                        {item.name}
+                      </p>
                       <span className="text-center">
-                        <p className="text-sm">{item.title}</p>
+                        <p className="text-sm dark:text-gray-500">
+                          {item.title}
+                        </p>
                       </span>
                     </span>
                   </div>
-                  <div className="flip-card-back">
+                  <div className="flip-card-back dark:bg-dark-main">
                     <h1 className="text-header-yellow text-xl font-medium pt-8">
                       {item.name}
                     </h1>
-                    <p className="text-navbar-default mt-8 p-1">{item.flip}</p>
+                    <p className="text-navbar-default mt-8 p-1 dark:text-gray-300">
+                      {item.flip}
+                    </p>
                   </div>
                 </div>
               </div>
