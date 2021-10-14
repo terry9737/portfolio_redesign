@@ -8,7 +8,9 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center py-7 overflow-hidden shadow-md">
           <h1 className="text-4xl sm:text-5xl font-bold px-16 sm:px-20 leading-tight z-20 text-center">
             I’m Gorgos Adrian{" "}
-            <span className="text-header-yellow z-20">Font – End</span>{" "}
+            <span className="text-header-yellow dark:text-pink-800 z-20">
+              Font – End
+            </span>{" "}
             Developer
           </h1>
           <p className="text-header-gray font-normal px-16 pt-3 text-center leading-snug z-20">

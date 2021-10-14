@@ -25,7 +25,6 @@ const Languages = () => {
             },
           }}
           onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <AnimateSharedLayout>
             <SwiperSlide layout className="bg-header-yellow">

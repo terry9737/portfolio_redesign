@@ -1,11 +1,14 @@
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./comps/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
         navbar: {
           default: "#767676",
+        },
+        dark: {
+          main: "rgb(36, 37, 38)",
         },
         header: {
           default: "#F0F0F6",

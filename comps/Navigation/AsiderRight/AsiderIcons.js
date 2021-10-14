@@ -40,7 +40,6 @@ const AsiderIcons = () => {
       path: "/",
     },
   ];
-  console.log(selected);
   return (
     <ul className="flex flex-col h-screen items-center justify-center space-y-10">
       {icons.map((icon) => {

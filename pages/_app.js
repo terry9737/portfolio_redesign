@@ -4,19 +4,22 @@ import Navigation from "./Navigation";
 import InnerContainer from "../comps/UI/InnerContainer";
 import AsiderLeft from "../comps/Navigation/AsiderLeft";
 import AsiderRight from "../comps/Navigation/AsiderRight";
-import Footer from "../comps/footer/footer";
+import { ThemeProvider } from "next-themes";
+
 function MyApp({ Component, pageProps }) {
   return (
-    <DataProvider>
-      <div className="bg-header-default dark:bg-header-yellow">
-        <Navigation />
-        <InnerContainer>
-          <AsiderLeft />
-          <Component {...pageProps} />
-          <AsiderRight />
-        </InnerContainer>
-      </div>
-    </DataProvider>
+    <ThemeProvider attribute="class">
+      <DataProvider>
+        <div className="bg-header-default">
+          <Navigation />
+          <InnerContainer>
+            <AsiderLeft />
+            <Component {...pageProps} />
+            <AsiderRight />
+          </InnerContainer>
+        </div>
+      </DataProvider>
+    </ThemeProvider>
   );
 }
 
