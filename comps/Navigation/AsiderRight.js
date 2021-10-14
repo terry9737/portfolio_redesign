@@ -12,7 +12,7 @@ const AsiderRight = () => {
   const controls = useAnimation();
 
   useEffect(() => {
-    if (isRightOn || width > 1279) {
+    if (isRightOn || width > 1280) {
       controls.start("active");
     } else if (!isRightOn) {
       controls.start("hidden");
@@ -23,7 +23,7 @@ const AsiderRight = () => {
       variants={slideRightVariants}
       initial="hidden"
       animate={controls}
-      className="bg-white dark:bg-dark-main w-20 h-screen fixed xl:static right-0 top-0 z-30 pt-3 pl-2 shadow-md"
+      className="bg-white dark:bg-dark-main w-20 h-screen fixed xl:static right-0 top-0 z-30 shadow-md"
     >
       <AsiderClose controls={controls} />
       <AsiderIcons />
