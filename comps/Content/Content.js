@@ -11,9 +11,11 @@ const Content = () => {
     <>
       <div className="flex flex-col mx-auto h-full overflow-scroll scroll_none">
         <Header />
-        {/* <WebSites /> */}
-        <Languages />
+        <WebSites />
+        {/* <Languages /> */}
         <Services />
+        <Education />
+        <Work />
       </div>
     </>
   );

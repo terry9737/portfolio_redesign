@@ -4,7 +4,9 @@ const AsiderLanguages = () => {
   const languages = ["English", "Romanian", "Russian"];
   return (
     <section>
-      <h3 className="text-base font-medium text-header-gray my-4">Languages</h3>
+      <h3 className="text-base font-medium text-header-gray my-4 dark:text-gray-100">
+        Languages
+      </h3>
       <ul className="flex flex-col justify-center items-start space-y-2">
         {languages.map((language, index) => {
           return (

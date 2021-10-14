@@ -23,7 +23,7 @@ const AsiderRight = () => {
       variants={slideRightVariants}
       initial="hidden"
       animate={controls}
-      className="bg-white w-20 h-screen fixed xl:static right-0 top-0 z-30 pt-3 pl-2 shadow-md"
+      className="bg-white dark:bg-dark-main w-20 h-screen fixed xl:static right-0 top-0 z-30 pt-3 pl-2 shadow-md"
     >
       <AsiderClose controls={controls} />
       <AsiderIcons />

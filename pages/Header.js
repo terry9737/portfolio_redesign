@@ -3,17 +3,15 @@ import Container from "../comps/UI/Container";
 
 const Header = () => {
   return (
-    <main className="bg-header-default mx-auto">
+    <main className="bg-header-default dark:bg-dark-main mx-auto">
       <Container>
         <div className="flex flex-col items-center justify-center py-7 overflow-hidden shadow-md">
-          <h1 className="text-4xl sm:text-5xl font-bold px-16 sm:px-20 leading-tight z-20 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold px-16 sm:px-20 leading-tight z-20 text-center dark:text-gray-100">
             I’m Gorgos Adrian{" "}
-            <span className="text-header-yellow dark:text-pink-800 z-20">
-              Font – End
-            </span>{" "}
+            <span className="text-header-yellow z-20">Font – End</span>{" "}
             Developer
           </h1>
-          <p className="text-header-gray font-normal px-16 pt-3 text-center leading-snug z-20">
+          <p className="text-header-gray dark:text-gray-100 font-normal px-16 pt-3 text-center leading-snug z-20">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
             volutpat feugiat placerat lobortis. Natoque rutrum semper sed
             suspendisse nunc lectus.

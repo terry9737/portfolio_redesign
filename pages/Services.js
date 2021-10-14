@@ -4,9 +4,9 @@ import Image from "next/dist/client/image";
 import image from "/public/images/coding.svg";
 const Services = () => {
   return (
-    <main className="bg-header-default pt-5 hidden sm:block">
+    <main className="bg-header-default dark:bg-dark-mainBackground pt-5 hidden sm:block">
       <Container>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 bg-header-default justify-items-center sm:gap-y-2 md:gap-y-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 bg-header-default dark:bg-dark-mainBackground justify-items-center sm:gap-y-2 md:gap-y-0">
           {services.map((item) => {
             return (
               <div className="flip-card" key={item.id}>

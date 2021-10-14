@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
       <DataProvider>
-        <div className="bg-header-default">
+        <div className="bg-header-default dark:bg-dark-mainBackground">
           <Navigation />
           <InnerContainer>
             <AsiderLeft />

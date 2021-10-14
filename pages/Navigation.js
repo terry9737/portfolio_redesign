@@ -14,22 +14,22 @@ const Navigation = () => {
   });
   return (
     <>
-      <nav className="2xl:hidden">
+      <nav className="2xl:hidden dark:bg-dark-main">
         <ul className="flex justify-between p-5">
           <li onClick={() => setIsLeftOn(!isLeftOn)} className="cursor-pointer">
-            <HiMenu className="text-3xl text-navbar-default" />
+            <HiMenu className="text-3xl text-navbar-default dark:text-dark-icons hover:text-header-yellow transition-colors duration-500 dark:hover:text-header-yellow" />
           </li>
           <li className="cursor-pointer">
             {theme === "light" && (
               <HiMoon
-                className="text-3xl text-navbar-default"
+                className="text-3xl text-navbar-default dark:text-dark-icons hover:text-header-yellow transition-colors duration-500 dark:hover:text-header-yellow"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               />
             )}
 
             {theme === "dark" && (
               <HiSun
-                className="text-3xl text-navbar-default"
+                className="text-3xl text-navbar-default dark:text-dark-icons hover:text-header-yellow transition-colors duration-500 dark:hover:text-header-yellow"
                 onClick={() => setTheme("light")}
               />
             )}
@@ -38,7 +38,7 @@ const Navigation = () => {
             onClick={() => setIsRightOn(!isRightOn)}
             className="cursor-pointer"
           >
-            <HiOutlineDotsVertical className="text-3xl text-navbar-default" />
+            <HiOutlineDotsVertical className="text-3xl text-navbar-default dark:text-dark-icons hover:text-header-yellow transition-colors duration-500 dark:hover:text-header-yellow" />
           </li>
         </ul>
       </nav>

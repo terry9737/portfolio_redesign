@@ -26,7 +26,7 @@ const AsiderLeft = () => {
       variants={slideLeftVariants}
       initial="hidden"
       animate={controls}
-      className="fixed xl:static top-0 left-0 z-30 w-60 sm:w-5/12 md:w-5/12 lg:w-4/12 xl:w-3/12 px-5 py-5 bg-white shadow-2xl h-full"
+      className="fixed xl:static top-0 left-0 z-30 w-60 sm:w-5/12 md:w-5/12 lg:w-4/12 xl:w-3/12 px-5 py-5 bg-white dark:bg-dark-main shadow-2xl h-full"
     >
       <AsiderClose controls={controls} />
       <AsiderHeader />
@@ -42,7 +42,7 @@ const AsiderLeft = () => {
           download="cv"
           href="./cv.pdf"
           target="_blank"
-          className="uppercase font-bold bg-header-yellow px-5 xl:px-3 py-3 sm:px-10 sm:py-3 text-gray-700"
+          className="uppercase font-bold bg-header-yellow px-5 xl:px-3 py-3 sm:px-10 sm:py-3 text-gray-700 dark:text-gray-100"
         >
           download cv
         </a>

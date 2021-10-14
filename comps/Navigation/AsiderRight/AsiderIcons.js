@@ -15,27 +15,27 @@ const AsiderIcons = () => {
   const router = useRouter();
   const icons = [
     {
-      icon: <HiOutlineHome className="text-2xl" />,
+      icon: <HiOutlineHome className="text-2xl dark:text-gray-200" />,
       id: 0,
       path: "/",
     },
     {
-      icon: <HiOutlineDocumentText className="text-2xl" />,
+      icon: <HiOutlineDocumentText className="text-2xl dark:text-gray-200" />,
       id: 1,
       path: "/Education",
     },
     {
-      icon: <HiBriefcase className="text-2xl" />,
+      icon: <HiBriefcase className="text-2xl dark:text-gray-200" />,
       id: 3,
       path: "/Work",
     },
     {
-      icon: <HiOutlineUser className="text-2xl" />,
+      icon: <HiOutlineUser className="text-2xl dark:text-gray-200" />,
       id: 2,
       path: "/",
     },
     {
-      icon: <HiAnnotation className="text-2xl" />,
+      icon: <HiAnnotation className="text-2xl dark:text-gray-200" />,
       id: 5,
       path: "/",
     },
@@ -65,7 +65,7 @@ const AsiderIcons = () => {
                 router.push(icon.path);
                 clickHandler(icon.id);
               }}
-              className={`h-10 w-10 rounded-full flex justify-center items-center cursor-pointer hover:bg-header-yellow`}
+              className={`h-10 w-10 rounded-full flex justify-center items-center cursor-pointer hover:bg-header-yellow dark:bg-gray-400 dark:hover:bg-header-yellow transition-colors duration-500`}
             >
               {icon.icon}
             </li>
