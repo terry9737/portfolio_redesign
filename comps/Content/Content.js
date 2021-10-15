@@ -8,13 +8,13 @@ import Experience from "../../pages/Experience";
 const Content = () => {
   return (
     <>
-      <div className="flex flex-col mx-auto h-full overflow-scroll scroll_none">
+      <div className="flex flex-col mx-auto h-full  scroll_none xl:ml-60">
         <Header />
         <WebSites />
-        {/* <Languages /> */}
+        <Languages />
         <Services />
-        <Experience />
-        <Experience works />
+        {/* <Experience /> */}
+        {/* <Experience works /> */}
       </div>
     </>
   );

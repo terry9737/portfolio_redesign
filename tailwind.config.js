@@ -26,6 +26,9 @@ module.exports = {
         0.5: "2px",
         0.8: "3px",
       },
+      screens: {
+        "2xl": "1441px",
+      },
     },
   },
   variants: {

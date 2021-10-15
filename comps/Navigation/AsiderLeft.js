@@ -26,7 +26,7 @@ const AsiderLeft = () => {
       variants={slideLeftVariants}
       initial="hidden"
       animate={controls}
-      className="fixed xl:static top-0 left-0 z-30 w-60 sm:w-5/12 md:w-5/12 lg:w-4/12 xl:w-3/12 px-5 py-5 bg-white dark:bg-dark-main shadow-2xl h-full"
+      className="fixed top-0 left:0 xl:w-80 w-60 sm:w-64 md:w-72 lg:w-80 bg-white dark:bg-dark-main shadow-2xl h-screen px-5 py-5 z-30"
     >
       <AsiderClose controls={controls} />
       <AsiderHeader />

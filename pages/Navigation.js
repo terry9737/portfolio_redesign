@@ -10,7 +10,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="xl:hidden dark:bg-dark-main">
+      <nav className="xl:hidden p-5 dark:bg-dark-main">
         <ul className="flex justify-between">
           <li onClick={() => setIsLeftOn(!isLeftOn)} className="cursor-pointer">
             <HiMenu className="text-3xl text-navbar-default dark:text-dark-icons hover:text-header-yellow transition-colors duration-500 dark:hover:text-header-yellow" />

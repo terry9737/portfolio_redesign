@@ -19,15 +19,26 @@ const AsiderRight = () => {
     }
   });
   return (
-    <motion.nav
-      variants={slideRightVariants}
-      initial="hidden"
-      animate={controls}
-      className="bg-white dark:bg-dark-main w-20 h-screen fixed xl:static right-0 top-0 z-30 shadow-md"
-    >
-      <AsiderClose controls={controls} />
-      <AsiderIcons />
-    </motion.nav>
+    <>
+      <motion.nav
+        variants={slideRightVariants}
+        initial="hidden"
+        animate={controls}
+        className="bg-white dark:bg-dark-main w-20 fixed right-0 top-0 z-30 h-screen flex flex-col justify-start items-center shadow-md xl:hidden"
+      >
+        <div className="fixed h-screen">
+          <AsiderClose controls={controls} />
+          <AsiderIcons />
+        </div>
+      </motion.nav>
+
+      <nav className="bg-white dark:bg-dark-main w-20 absolute right-0 top-0 z-30 xl:z-0 h-full flex-col justify-start items-center shadow-md hidden xl:flex">
+        <div className="fixed h-screen">
+          <AsiderClose controls={controls} />
+          <AsiderIcons />
+        </div>
+      </nav>
+    </>
   );
 };
 

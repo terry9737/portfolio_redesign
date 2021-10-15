@@ -20,6 +20,7 @@ export const slideRightVariants = {
   },
   active: {
     x: 0,
+    y: 0,
     transition: { duration: 0.5, ease: "linear", type: "tween" },
   },
 };

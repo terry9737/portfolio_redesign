@@ -94,3 +94,14 @@
     height: 300px;
   }
 }
+
+@media screen and (min-width: 1281px) {
+  .right__slider {
+    right: 20%;
+  }
+}
+
+.next__btn {
+}
+.prev__btn {
+}

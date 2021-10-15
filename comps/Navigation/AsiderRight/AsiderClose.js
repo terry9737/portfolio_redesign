@@ -16,9 +16,9 @@ const AsiderClose = ({ controls }) => {
           controls.start("hidden");
         }}
       >
-        <HiOutlineX className="text-3xl" />
+        <HiOutlineX className="text-3xl mt-5" />
       </span>
-      <span className="hidden lg:flex justify-center cursor-pointer pt-5">
+      <span className="hidden xl:flex justify-center cursor-pointer pt-5">
         {theme === "light" && (
           <HiMoon
             className="text-3xl text-navbar-default dark:text-dark-icons hover:text-header-yellow transition-colors duration-500 dark:hover:text-header-yellow"

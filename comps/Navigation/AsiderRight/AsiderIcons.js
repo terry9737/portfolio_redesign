@@ -41,7 +41,7 @@ const AsiderIcons = () => {
     },
   ];
   return (
-    <ul className="flex flex-col h-screen items-center justify-center space-y-10">
+    <ul className="flex flex-col items-center justify-center space-y-10 h-screen icons_center">
       {icons.map((icon) => {
         if (icon.id === selected) {
           return (
