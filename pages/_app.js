@@ -5,6 +5,7 @@ import InnerContainer from "../comps/UI/InnerContainer";
 import AsiderLeft from "../comps/Navigation/AsiderLeft";
 import AsiderRight from "../comps/Navigation/AsiderRight";
 import { ThemeProvider } from "next-themes";
+import Footer from "../comps/footer/footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,7 +15,10 @@ function MyApp({ Component, pageProps }) {
           <Navigation />
           <InnerContainer>
             <AsiderLeft />
-            <Component {...pageProps} />
+            <div className="flex flex-col mx-auto h-full scroll_none xl:ml-60">
+              <Component {...pageProps} />
+              <Footer />
+            </div>
             <AsiderRight />
           </InnerContainer>
         </div>

@@ -105,3 +105,6 @@
 }
 .prev__btn {
 }
+.swiper-slide {
+  height: 200px !important;
+}

@@ -22,7 +22,7 @@ const AsiderIcons = () => {
     {
       icon: <HiOutlineDocumentText className="text-2xl dark:text-gray-200" />,
       id: 1,
-      path: "/Experience",
+      path: "/Education",
     },
     {
       icon: <HiBriefcase className="text-2xl dark:text-gray-200" />,
