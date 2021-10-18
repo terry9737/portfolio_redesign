@@ -3,7 +3,7 @@ import Container from "../comps/UI/Container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
 const info = [
   {
@@ -25,7 +25,7 @@ const info = [
     id: 2,
   },
 ];
-SwiperCore.use([Navigation]);
+SwiperCore.use([Autoplay, Navigation]);
 const Languages = () => {
   return (
     <main className="pt-5 bg-header-default dark:bg-dark-mainBackground">
@@ -40,6 +40,10 @@ const Languages = () => {
             spaceBetween={10}
             slidesPerView={1}
             loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: true,
+            }}
             breakpoints={{
               640: {
                 slidesPerView: 2,

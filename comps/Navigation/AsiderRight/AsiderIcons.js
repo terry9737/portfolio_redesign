@@ -32,12 +32,12 @@ const AsiderIcons = () => {
     {
       icon: <HiOutlineUser className="text-2xl dark:text-gray-200" />,
       id: 2,
-      path: "/",
+      path: "/Languages",
     },
     {
       icon: <HiAnnotation className="text-2xl dark:text-gray-200" />,
       id: 5,
-      path: "/",
+      path: "/Contact",
     },
   ];
   return (

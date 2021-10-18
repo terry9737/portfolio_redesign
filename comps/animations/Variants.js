@@ -24,3 +24,21 @@ export const slideRightVariants = {
     transition: { duration: 0.5, ease: "linear", type: "tween" },
   },
 };
+
+// !contacts button
+export const contactVariants = {
+  hidden: {
+    y: 50,
+    transition: { duration: 0.5, type: "spring" },
+  },
+  visible: {
+    y: 0,
+    transition: { duration: 0.5, type: "spring" },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 5,
+    },
+  },
+};
