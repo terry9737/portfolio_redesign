@@ -7,7 +7,7 @@ const Navigation = () => {
   const { setIsLeftOn, setIsRightOn, isLeftOn, isRightOn } =
     useContext(DataContext);
   const { theme, setTheme } = useTheme();
-
+  console.log(theme);
   return (
     <>
       <nav className="xl:hidden p-5 dark:bg-dark-main">

@@ -2,7 +2,7 @@ import { BiMapAlt, BiMessageSquareDetail, BiMobile } from "react-icons/bi";
 const ContactMyInfo = () => {
   return (
     <div className="w-full flex flex-col font-normal text-base sm:text-sm px-5 sm:px-0">
-      <h1 className="font-bold text-3xl text-gray-700 my-12 text-center md:text-left">
+      <h1 className="font-bold text-3xl text-gray-700 dark:text-gray-300 my-12 text-center md:text-left">
         Contact Information
       </h1>
       <section className="bg-white dark:bg-dark-main w-full p-5 mb-5">

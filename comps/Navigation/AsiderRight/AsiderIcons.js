@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import {
   HiOutlineHome,
   HiOutlineDocumentText,
   HiOutlineUser,
   HiBriefcase,
-  HiOutlinePencil,
   HiAnnotation,
 } from "react-icons/hi";
 import { useContext } from "react";
 import { DataContext } from "../../context/Context";
 import { useRouter } from "next/dist/client/router";
 const AsiderIcons = () => {
-  const { selected, clickHandler } = useContext(DataContext);
+  const { selected, setSelected, clickHandler } = useContext(DataContext);
   const router = useRouter();
   const icons = [
     {
@@ -32,7 +32,7 @@ const AsiderIcons = () => {
     {
       icon: <HiOutlineUser className="text-2xl dark:text-gray-200" />,
       id: 2,
-      path: "/Languages",
+      path: "/Portfolio",
     },
     {
       icon: <HiAnnotation className="text-2xl dark:text-gray-200" />,
@@ -40,6 +40,10 @@ const AsiderIcons = () => {
       path: "/Contact",
     },
   ];
+  useEffect(() => {
+    const slideId = JSON.parse(localStorage.getItem("slide"));
+    setSelected(slideId);
+  });
   return (
     <ul className="flex flex-col items-center justify-center space-y-10 h-screen icons_center">
       {icons.map((icon) => {

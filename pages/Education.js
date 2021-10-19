@@ -1,10 +1,16 @@
 import Container from "../comps/UI/Container";
 import { education, educationTitle } from "../comps/Education/education";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
     <Container>
-      <div className="h-screen">
+      <motion.div
+        className="h-screen"
+        initial={{ y: -500 }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", bounce: 0.3, damping: 11 }}
+      >
         <header className="p-4 bg-header-default dark:bg-dark-mainBackground">
           <h1 className="text-center text-4xl font-medium mb-3 sm:mb-4 lg:mb-6 dark:text-gray-200">
             {educationTitle.title}
@@ -45,7 +51,7 @@ const Experience = () => {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 };

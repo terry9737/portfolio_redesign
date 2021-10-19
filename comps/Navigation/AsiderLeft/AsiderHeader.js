@@ -7,20 +7,23 @@ const AsiderHeader = () => {
   const Links = [
     {
       image: <FaFacebookF />,
+      link: "https://www.facebook.com/adrian9737/",
       id: 0,
     },
     {
       image: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/in/gorgos-adrian/",
       id: 1,
     },
     {
       image: <FaInbox />,
       id: 2,
+      link: "mailto:adriangorgos@gmail.com?subject=Adrian Gorgos Frontend",
     },
   ];
   return (
     <header className="flex flex-col items-center border-b-2 border-gray-400 dark:border-gray-300 border-opacity-40">
-      <section className=" bg-white w-40 h-40 mb-5 sm:w-52 sm:h-52 rounded-full relative">
+      <section className="w-40 h-40 mb-5 sm:w-52 sm:h-52 rounded-full relative">
         <Image
           src={avatar}
           alt="avatar"
@@ -47,7 +50,9 @@ const AsiderHeader = () => {
               key={link.id}
               className="text-sm sm:text-md md:text-lg flex justify-center items-center h-10 w-10 bg-header-yellow rounded-full cursor-pointer filter hover:grayscale transition duration-500"
             >
-              {link.image}
+              <a href={link.link} target="_blank" rel="noreferrer">
+                {link.image}
+              </a>
             </li>
           );
         })}

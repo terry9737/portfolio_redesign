@@ -20,7 +20,6 @@ const ContactInfo = () => {
     setLoading(true);
     try {
       const docRef = await addDoc(collection(db, "contacts"), data);
-      //   console.log("Document written with ID: ", docRef.id);
       setLoading(false);
       setSent(true);
       setSuccess(true);

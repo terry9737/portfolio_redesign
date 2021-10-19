@@ -10,6 +10,8 @@ import { slideLeftVariants } from "../animations/Variants";
 import AsiderLanguages from "./AsiderLeft/AsiderLanguages";
 import styled from "styled-components";
 import { useWindowSize } from "../hooks/useWindowSize";
+import { BsFillMouseFill } from "react-icons/bs";
+
 const AsiderLeft = () => {
   const controls = useAnimation();
   const { isLeftOn } = useContext(DataContext);
@@ -31,6 +33,7 @@ const AsiderLeft = () => {
       <AsiderClose controls={controls} />
       <AsiderHeader />
 
+      <BsFillMouseFill className="mx-auto text-2xl animate-bounce text-gray-600 dark:text-white mt-5" />
       <Wrap className="scroll_none">
         <AsiderBio />
         <AsiderLanguages />
@@ -42,7 +45,7 @@ const AsiderLeft = () => {
           download="cv"
           href="./cv.pdf"
           target="_blank"
-          className="uppercase font-bold bg-header-yellow px-5 xl:px-3 py-3 sm:px-10 sm:py-3 text-gray-700 dark:text-gray-100"
+          className="uppercase font-bold bg-header-yellow px-5 xl:px-3 py-3 sm:px-10 sm:py-3 text-white dark:text-gray-100 hover:text-gray-400 dark:hover:text-gray-400 transition-colors duration-300"
         >
           download cv
         </a>

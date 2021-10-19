@@ -9,7 +9,7 @@ import Footer from "../comps/footer/footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" enableSystem={false}>
       <DataProvider>
         <div className="bg-header-default dark:bg-dark-mainBackground">
           <Navigation />

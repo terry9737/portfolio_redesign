@@ -1,9 +1,15 @@
 import Container from "../comps/UI/Container";
 import { work, workTitle } from "../comps/Work/work";
+import { motion } from "framer-motion";
 const Work = () => {
   return (
     <Container>
-      <div className="h-screen">
+      <motion.div
+        initial={{ y: -500 }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", bounce: 0.3, damping: 11 }}
+        className="h-screen"
+      >
         <header className="p-4 bg-header-default dark:bg-dark-mainBackground">
           <h1 className="text-center text-4xl font-medium mb-3 sm:mb-4 lg:mb-6 dark:text-gray-200">
             {workTitle.title}
@@ -44,7 +50,7 @@ const Work = () => {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 };
