@@ -4,7 +4,7 @@ import Image from "next/image";
 import sync from "/public/images/sync.svg";
 const Header = () => {
   return (
-    <main className="bg-header-default dark:bg-dark-main mx-auto">
+    <main className="bg-header-default dark:bg-dark-mainBackground mx-auto">
       <Container>
         <div className="flex flex-col sm:flex-row items-center justify-center py-7 overflow-hidden shadow-md">
           <div className="flex flex-col items-start justify-center">
