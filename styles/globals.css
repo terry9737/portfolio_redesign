@@ -43,7 +43,8 @@
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner {
   transform: rotateX(180deg);
 }
 

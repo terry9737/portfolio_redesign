@@ -3,12 +3,15 @@ import { services } from "../comps/services/services";
 import Image from "next/dist/client/image";
 const Services = () => {
   return (
-    <main className="bg-header-default dark:bg-dark-mainBackground pt-5 hidden sm:block">
+    <main className="bg-header-default dark:bg-dark-mainBackground pt-5">
       <Container>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 bg-header-default dark:bg-dark-mainBackground justify-items-center sm:gap-y-2 gap-x-5 md:gap-y-0">
+        <div className="grid grid-cols-1 gap-y-2 sm:grid-cols-2 md:grid-cols-4 bg-header-default dark:bg-dark-mainBackground justify-items-center sm:gap-y-5 gap-x-5 md:gap-y-0">
           {services.map((item) => {
             return (
-              <div className="flip-card" key={item.id}>
+              <div
+                className="flip-card dark:bg-dark-mainBackground"
+                key={item.id}
+              >
                 <div className="flip-card-inner">
                   <div className="flip-card-front dark:bg-dark-main">
                     <span className="flex flex-col justify-center items-center p-7 h-full">

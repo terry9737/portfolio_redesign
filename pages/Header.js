@@ -10,7 +10,7 @@ const Header = () => {
           <div className="flex flex-col items-start justify-center">
             <h1 className="text-4xl sm:text-5xl font-bold px-5 leading-tight z-20 text-left dark:text-gray-100">
               I’m Gorgos Adrian{" "}
-              <span className="text-header-yellow z-20">Font – End</span>{" "}
+              <span className="text-header-yellow z-20">Front – End</span>{" "}
               Developer
             </h1>
             <p className="text-header-gray dark:text-gray-100 font-normal px-5 pt-3 text-left leading-snug z-20">

@@ -15,7 +15,7 @@ const PortfolioNav = () => {
       cat: "reset",
     },
     {
-      name: "Vanila HTML/CSS",
+      name: "HTML/CSS",
       id: 1,
       cat: "vanila",
     },
