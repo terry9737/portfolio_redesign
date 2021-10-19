@@ -43,6 +43,20 @@ const WebSites = () => {
               controlsTwo.start("active");
               controlsThree.start("active");
             }}
+            whileTap={() => {
+              controlsOne.start("active");
+              controlsTwo.start("active");
+              controlsThree.start("active");
+              controlsFour.start("hidden");
+              controlsFive.start("hidden");
+              controlsSix.start("hidden");
+              controlsSeven.start("hidden");
+              controlsEight.start("hidden");
+              controlsNine.start("hidden");
+              controlsTen.start("hidden");
+              controlsEleven.start("hidden");
+              controlsTwelwe.start("hidden");
+            }}
             onHoverEnd={() => {
               controlsOne.start("hidden");
               controlsTwo.start("hidden");
@@ -82,6 +96,20 @@ const WebSites = () => {
               controlsFour.start("active");
               controlsFive.start("active");
               controlsSix.start("active");
+            }}
+            whileTap={() => {
+              controlsOne.start("hidden");
+              controlsTwo.start("hidden");
+              controlsThree.start("hidden");
+              controlsFour.start("active");
+              controlsFive.start("active");
+              controlsSix.start("active");
+              controlsSeven.start("hidden");
+              controlsEight.start("hidden");
+              controlsNine.start("hidden");
+              controlsTen.start("hidden");
+              controlsEleven.start("hidden");
+              controlsTwelwe.start("hidden");
             }}
             onHoverEnd={() => {
               controlsFour.start("hidden");
@@ -123,6 +151,20 @@ const WebSites = () => {
               controlsEight.start("active");
               controlsNine.start("active");
             }}
+            whileTap={() => {
+              controlsOne.start("hidden");
+              controlsTwo.start("hidden");
+              controlsThree.start("hidden");
+              controlsFour.start("hidden");
+              controlsFive.start("hidden");
+              controlsSix.start("hidden");
+              controlsSeven.start("active");
+              controlsEight.start("active");
+              controlsNine.start("active");
+              controlsTen.start("hidden");
+              controlsEleven.start("hidden");
+              controlsTwelwe.start("hidden");
+            }}
             onHoverEnd={() => {
               controlsSeven.start("hidden");
               controlsEight.start("hidden");
@@ -159,6 +201,20 @@ const WebSites = () => {
 
           <motion.section
             onHoverStart={() => {
+              controlsTen.start("active");
+              controlsEleven.start("active");
+              controlsTwelwe.start("active");
+            }}
+            whileTap={() => {
+              controlsOne.start("hiden");
+              controlsTwo.start("hiden");
+              controlsThree.start("hiden");
+              controlsFour.start("hidden");
+              controlsFive.start("hidden");
+              controlsSix.start("hidden");
+              controlsSeven.start("hidden");
+              controlsEight.start("hidden");
+              controlsNine.start("hidden");
               controlsTen.start("active");
               controlsEleven.start("active");
               controlsTwelwe.start("active");
