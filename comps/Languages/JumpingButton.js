@@ -18,7 +18,7 @@ const JumpingButton = () => {
     }
   });
   const variants = {
-    hidden: { x: 500, opacity: 0 },
+    hidden: { x: 100, opacity: 0 },
     active: {
       x: 0,
       opacity: 1,

@@ -59,12 +59,12 @@ const Languages = () => {
                 );
               }
             })}
-            <div className="flex justify-center lg:hidden my-5">
+            <div className="flex justify-center lg:hidden mt-5">
               <IoMdArrowRoundBack className="prev__btn text-5xl cursor-pointer text-gray-600 dark:text-gray-200 dark:hover:text-gray-400 transition-colors duration-300" />
               <IoMdArrowRoundForward className="next__btn text-5xl cursor-pointer ml-10 text-gray-600 dark:text-gray-200 dark:hover:text-gray-400 transition-colors duration-300" />
             </div>
           </Swiper>
-          <span className="flex justify-center items-center">
+          <span className="flex justify-center items-center w-full overflow-hidden">
             <JumpingButton />
           </span>
         </div>
