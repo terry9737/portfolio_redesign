@@ -6,13 +6,14 @@ import "swiper/css/navigation";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
 import { info } from "./LanguagesData";
+import JumpingButton from "./JumpingButton";
 SwiperCore.use([Autoplay, Navigation]);
 const Languages = () => {
   return (
     <main className="pt-5 bg-header-default dark:bg-dark-mainBackground">
       <Container>
         <div className="bg-header-default dark:bg-dark-mainBackground">
-          <h1 className="text-center text-xl font-medium text-navbar-default dark:text-gray-300 mb-5">
+          <h1 className="text-center text-2xl text-navbar-default font-semibold dark:text-gray-300 mb-5">
             A brief overview of my projects
           </h1>
           <Swiper
@@ -38,9 +39,9 @@ const Languages = () => {
                 return (
                   <SwiperSlide
                     key={info.id}
-                    className="bg-white dark:bg-dark-main rounded-xl cursor-pointer flex flex-col items-center justify-between space-y-5 pt-0"
+                    className="bg-white dark:bg-dark-main rounded-xl cursor-pointer flex flex-col items-center space-y-5 pt-0 relative"
                   >
-                    <h1 className="text-center text-gray-500 dark:text-gray-200 font-semibold text-xl">
+                    <h1 className="text-center text-gray-500 dark:text-gray-200 font-semibold text-xl mt-2 sm:mt-5">
                       {info.title}
                     </h1>
                     <p className="text-center dark:text-gray-300">
@@ -50,7 +51,7 @@ const Languages = () => {
                       href={info.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="bg-header-yellow rounded-t-lg p-5 font-normal dark:text-gray-100 hover:bg-yellow-400"
+                      className="bg-header-yellow rounded-t-lg p-5 font-normal dark:text-gray-100 hover:bg-yellow-400 absolute bottom-0"
                     >
                       Visit {info.title}
                     </a>
@@ -63,6 +64,9 @@ const Languages = () => {
               <IoMdArrowRoundForward className="next__btn text-5xl cursor-pointer ml-10 text-gray-600 dark:text-gray-200 dark:hover:text-gray-400 transition-colors duration-300" />
             </div>
           </Swiper>
+          <span className="flex justify-center items-center">
+            <JumpingButton />
+          </span>
         </div>
       </Container>
     </main>

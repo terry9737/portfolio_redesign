@@ -1,45 +1,14 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import {
-  HiOutlineHome,
-  HiOutlineDocumentText,
-  HiOutlineUser,
-  HiBriefcase,
-  HiAnnotation,
-} from "react-icons/hi";
 import { useContext } from "react";
 import { DataContext } from "../../context/Context";
 import { useRouter } from "next/dist/client/router";
+import { icons } from "./Icons";
+
 const AsiderIcons = () => {
   const { selected, setSelected, clickHandler } = useContext(DataContext);
   const router = useRouter();
-  const icons = [
-    {
-      icon: <HiOutlineHome className="text-2xl dark:text-gray-200" />,
-      id: 0,
-      path: "/",
-    },
-    {
-      icon: <HiOutlineDocumentText className="text-2xl dark:text-gray-200" />,
-      id: 1,
-      path: "/Education",
-    },
-    {
-      icon: <HiBriefcase className="text-2xl dark:text-gray-200" />,
-      id: 3,
-      path: "/Work",
-    },
-    {
-      icon: <HiOutlineUser className="text-2xl dark:text-gray-200" />,
-      id: 2,
-      path: "/Portfolio",
-    },
-    {
-      icon: <HiAnnotation className="text-2xl dark:text-gray-200" />,
-      id: 5,
-      path: "/Contact",
-    },
-  ];
+
   useEffect(() => {
     const slideId = JSON.parse(localStorage.getItem("slide"));
     setSelected(slideId);

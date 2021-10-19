@@ -15,7 +15,6 @@ const Services = () => {
                 <div className="flip-card-inner">
                   <div className="flip-card-front dark:bg-dark-main">
                     <span className="flex flex-col justify-center items-center p-7 h-full">
-                      {/* {item.icon} */}
                       <Image src={item.icon} alt="img" />
                       <p className="mt-5 font-semibold dark:text-gray-200">
                         {item.name}

@@ -11,6 +11,8 @@ module.exports = {
           main: "rgb(36, 37, 38)",
           icons: "rgb(228, 230, 235)",
           mainBackground: "rgb(24, 25, 26)",
+          cta: "#51277d",
+          ctaText: "#7ddb6f",
         },
         header: {
           default: "#F0F0F6",
