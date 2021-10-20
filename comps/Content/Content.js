@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Content = () => {
   return (
     <>
-      <motion.div
+      <motion.main
         initial={{ x: -500 }}
         animate={{ x: 0 }}
         transition={{ type: "spring", bounce: 0.3, damping: 11 }}
@@ -15,7 +15,7 @@ const Content = () => {
         <WebSites />
         <Languages />
         <Services />
-      </motion.div>
+      </motion.main>
     </>
   );
 };

@@ -34,7 +34,7 @@ const WebSites = () => {
   const controlsTwelwe = useAnimation();
 
   return (
-    <main className="bg-header-default dark:bg-dark-mainBackground pt-5">
+    <div className="bg-header-default dark:bg-dark-mainBackground pt-5">
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-10 bg-header-default dark:bg-dark-mainBackground">
           {/* one */}
@@ -268,7 +268,7 @@ const WebSites = () => {
           </motion.section>
         </div>
       </Container>
-    </main>
+    </div>
   );
 };
 export default WebSites;

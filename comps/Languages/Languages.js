@@ -10,7 +10,7 @@ import JumpingButton from "./JumpingButton";
 SwiperCore.use([Autoplay, Navigation]);
 const Languages = () => {
   return (
-    <main className="pt-5 bg-header-default dark:bg-dark-mainBackground">
+    <div className="pt-5 bg-header-default dark:bg-dark-mainBackground">
       <Container>
         <div className="bg-header-default dark:bg-dark-mainBackground">
           <h1 className="text-center text-3xl text-navbar-default font-semibold dark:text-gray-100 mb-5">
@@ -68,7 +68,7 @@ const Languages = () => {
           </span>
         </div>
       </Container>
-    </main>
+    </div>
   );
 };
 

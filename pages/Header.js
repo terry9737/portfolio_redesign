@@ -5,7 +5,7 @@ import sync from "/public/images/sync.svg";
 import Typist from "react-typist";
 const Header = () => {
   return (
-    <main className="bg-header-default dark:bg-dark-mainBackground mx-auto">
+    <div className="bg-header-default dark:bg-dark-mainBackground mx-auto">
       <Container>
         <div className="flex flex-col sm:flex-row items-center justify-center py-7 overflow-hidden shadow-md">
           <div className="flex flex-col items-start justify-center">
@@ -31,12 +31,12 @@ const Header = () => {
             </span>
           </div>
           <AnimationDots />
-          <span className="w-full">
+          <div className="w-full">
             <Image src={sync} alt="sync" />
-          </span>
+          </div>
         </div>
       </Container>
-    </main>
+    </div>
   );
 };
 

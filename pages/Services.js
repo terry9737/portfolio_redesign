@@ -3,7 +3,7 @@ import { services } from "../comps/services/services";
 import Image from "next/dist/client/image";
 const Services = () => {
   return (
-    <main className="bg-header-default dark:bg-dark-mainBackground pt-5">
+    <div className="bg-header-default dark:bg-dark-mainBackground pt-5">
       <Container>
         <div className="grid grid-cols-1 gap-y-2 sm:grid-cols-2 md:grid-cols-4 bg-header-default dark:bg-dark-mainBackground justify-items-center sm:gap-y-5 gap-x-5 md:gap-y-0">
           {services.map((item) => {
@@ -40,7 +40,7 @@ const Services = () => {
           })}
         </div>
       </Container>
-    </main>
+    </div>
   );
 };
 
