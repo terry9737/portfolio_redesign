@@ -13,7 +13,7 @@ const Skills = () => {
   ];
   return (
     <>
-      <section>
+      <div>
         <div className="flex flex-col space-y-5 border-b-2 pb-5 border-gray-400 dark:border-gray-200 pt-7">
           {skills.map((skill) => {
             if (skill.percent > 50 && skill.percent < 61) {
@@ -79,7 +79,7 @@ const Skills = () => {
             }
           })}
         </div>
-      </section>
+      </div>
     </>
   );
 };

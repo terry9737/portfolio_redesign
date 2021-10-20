@@ -55,7 +55,7 @@ const AsiderLeft = () => {
 };
 
 export default AsiderLeft;
-const Wrap = styled.main`
+const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   overflow: scroll;

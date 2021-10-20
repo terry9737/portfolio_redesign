@@ -1,6 +1,6 @@
 const AsiderBio = () => {
   return (
-    <section>
+    <div>
       <div className="flex flex-col space-y-5 border-b-2 border-gray-400 dark:border-gray-300 border-opacity-40 pb-7">
         <div className="flex justify-between items-center mt-7">
           <p className="px-2 py-1 sm:px-3 sm:py-1 bg-header-yellow text-header-black font-light dark:text-gray-100">
@@ -19,7 +19,7 @@ const AsiderBio = () => {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

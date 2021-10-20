@@ -3,7 +3,7 @@ import styled from "styled-components";
 const AsiderLanguages = () => {
   const languages = ["English", "Romanian", "Russian"];
   return (
-    <section>
+    <div>
       <h3 className="text-base font-medium text-header-gray my-4 dark:text-gray-100">
         Languages
       </h3>
@@ -17,7 +17,7 @@ const AsiderLanguages = () => {
           );
         })}
       </ul>
-    </section>
+    </div>
   );
 };
 
