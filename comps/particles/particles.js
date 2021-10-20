@@ -1,21 +1,9 @@
 import Particles from "react-tsparticles";
 import map from "./particles.json";
 const Particle = ({ id }) => {
-  const particlesInit = (main) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
   return (
     <Particles
       id={id}
-      init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         background: {
           color: {

@@ -14,17 +14,17 @@ const Services = () => {
               >
                 <div className="flip-card-inner">
                   <div className="flip-card-front dark:bg-dark-main">
-                    <span className="flex flex-col justify-center items-center p-7 h-full">
+                    <div className="flex flex-col justify-center items-center p-7 h-full">
                       <Image src={item.icon} alt="img" />
                       <p className="mt-5 font-semibold dark:text-gray-200">
                         {item.name}
                       </p>
-                      <span className="text-center">
+                      <div className="text-center">
                         <p className="text-sm dark:text-gray-500">
                           {item.title}
                         </p>
-                      </span>
-                    </span>
+                      </div>
+                    </div>
                   </div>
                   <div className="flip-card-back dark:bg-dark-main">
                     <h1 className="text-header-yellow text-xl font-medium pt-8">

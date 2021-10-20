@@ -32,7 +32,6 @@ const Languages = () => {
                 spaceBetween: 20,
               },
             }}
-            onSlideChange={() => console.log("slide change")}
           >
             {info.map((info) => {
               if (info.category !== "unknown") {

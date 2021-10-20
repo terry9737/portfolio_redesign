@@ -67,7 +67,7 @@ const WebSites = () => {
             className="website_container"
           >
             <GoBrowser className="text-7xl" />
-            <motion.span
+            <motion.div
               variants={firstContainer}
               initial="hidden"
               animate={controlsOne}
@@ -93,7 +93,7 @@ const WebSites = () => {
                 My main focus is on React.js along with Next.js, which I use for
                 creating dynamic projects, together with TailwindCSS
               </motion.p>
-            </motion.span>
+            </motion.div>
           </motion.section>
 
           <motion.section
@@ -124,7 +124,7 @@ const WebSites = () => {
             className="website_container"
           >
             <GoBook className="text-7xl" />
-            <motion.span
+            <motion.div
               variants={secondContainer}
               initial="hidden"
               animate={controlsFour}
@@ -151,7 +151,7 @@ const WebSites = () => {
                 Bootstrap,TailwindCSS,Sass and working knowledge of Linux and
                 Windows
               </motion.p>
-            </motion.span>
+            </motion.div>
           </motion.section>
           <motion.section
             onHoverStart={() => {
@@ -181,7 +181,7 @@ const WebSites = () => {
             className="website_container"
           >
             <GoGlobe className="text-7xl" />
-            <motion.span
+            <motion.div
               variants={thirdContainer}
               initial="hidden"
               animate={controlsSeven}
@@ -207,7 +207,7 @@ const WebSites = () => {
                 I have learned everything I know from courses that on YouTube,
                 Udemy, Stackoverflow posts, GitHub and Scrimba
               </motion.p>
-            </motion.span>
+            </motion.div>
           </motion.section>
           <motion.section
             onHoverStart={() => {
@@ -237,7 +237,7 @@ const WebSites = () => {
             className="website_container"
           >
             <GoFileBinary className="text-7xl" />
-            <motion.span
+            <motion.div
               variants={fourthContainer}
               initial="hidden"
               animate={controlsTen}
@@ -264,7 +264,7 @@ const WebSites = () => {
                 properly to create corresponding designs. Additionally I am
                 acknowledged with REST APIs, Axios, and other hooks from Next.js
               </motion.p>
-            </motion.span>
+            </motion.div>
           </motion.section>
         </div>
       </Container>
