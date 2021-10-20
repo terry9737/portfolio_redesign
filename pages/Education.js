@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <Container>
       <motion.div
-        className="h-screen"
+        className="h-full"
         initial={{ y: -500 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", bounce: 0.3, damping: 11 }}

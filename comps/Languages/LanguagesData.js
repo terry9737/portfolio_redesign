@@ -7,7 +7,7 @@ import { GrDocumentTime } from "react-icons/gr";
 export const info = [
   {
     title: "Lasles Vpn",
-    body: "A landingpage I made using Next.js and TailwindCSS",
+    body: "a landing page I made using Next.js and Tailwind ",
     url: "https://spa-vpn-sitex-n9032a3yk-greaffer.vercel.app/",
     category: "next",
     img: two,
@@ -15,7 +15,7 @@ export const info = [
   },
   {
     title: "Patrix",
-    body: "A landing page I made using Bootstrap5",
+    body: "A landing page I made using Bootstrap",
     url: "https://terry9737.github.io/purple-respo/",
     category: "vanila",
     img: three,
@@ -23,7 +23,7 @@ export const info = [
   },
   {
     title: "Net Pirate",
-    body: " Another landingpage I made using Bootstrap5Another landingpage I made using Bootstrap5",
+    body: " Another landingpage I made using Bootstrap",
     url: "https://terry9737.github.io/btstrp/#home",
     category: "vanila",
     img: four,
@@ -31,7 +31,7 @@ export const info = [
   },
   {
     title: "Living the simple life",
-    body: " Another landingpage I made using Bootstrap5Another landingpage I made using Bootstrap5",
+    body: "A vanilla CSS and HTML page",
     url: "https://terry9737.github.io/respo/index.html",
     category: "vanila",
     img: one,

@@ -36,10 +36,8 @@ const PortfolioNav = () => {
         Portfolios
       </h1>
       <p className="text-center mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        quidem eum ducimus impedit aliquam error incidunt fugiat similique ut
-        doloremque, voluptatem dolorum, laudantium amet natus porro maiores sint
-        quaerat ratione!
+        A section on my works that I created from various online designs and
+        YouTube projects
       </p>
       <ul className="flex items-center justify-center space-x-5 dark:text-gray-400">
         {titles.map((title) => {

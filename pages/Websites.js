@@ -139,7 +139,7 @@ const WebSites = () => {
                 animate={controlsFive}
                 className="text-gray-50 font-semibold text-center my-3"
               >
-                item one
+                Focus On Readability
               </motion.h3>
               <motion.p
                 variants={secondsubText}
@@ -147,8 +147,9 @@ const WebSites = () => {
                 animate={controlsSix}
                 className="website_text z-10"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                Strong knowledge of basic web technologies such as HTML, CSS,
+                Bootstrap,TailwindCSS,Sass and working knowledge of Linux and
+                Windows
               </motion.p>
             </motion.span>
           </motion.section>
@@ -195,7 +196,7 @@ const WebSites = () => {
                 animate={controlsEight}
                 className="text-gray-50 font-semibold text-center my-3"
               >
-                item one
+                Sources
               </motion.h3>
               <motion.p
                 variants={thirdsubText}
@@ -203,8 +204,8 @@ const WebSites = () => {
                 animate={controlsNine}
                 className="website_text z-10"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                I have learned everything I know from courses that on YouTube,
+                Udemy, Stackoverflow posts, GitHub and Scrimba
               </motion.p>
             </motion.span>
           </motion.section>
@@ -251,7 +252,7 @@ const WebSites = () => {
                 animate={controlsEleven}
                 className="text-gray-50 font-semibold text-center my-3"
               >
-                item one
+                Diverse Knowledge
               </motion.h3>
               <motion.p
                 variants={fourthsubText}
@@ -259,8 +260,9 @@ const WebSites = () => {
                 animate={controlsTwelwe}
                 className="website_text z-10"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                I have experience working with npm packages and using them
+                properly to create corresponding designs. Additionally I am
+                acknowledged with REST APIs, Axios, and other hooks from Next.js
               </motion.p>
             </motion.span>
           </motion.section>

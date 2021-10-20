@@ -13,7 +13,7 @@ const Languages = () => {
     <main className="pt-5 bg-header-default dark:bg-dark-mainBackground">
       <Container>
         <div className="bg-header-default dark:bg-dark-mainBackground">
-          <h1 className="text-center text-2xl text-navbar-default font-semibold dark:text-gray-300 mb-5">
+          <h1 className="text-center text-3xl text-navbar-default font-semibold dark:text-gray-100 mb-5">
             A brief overview of my projects
           </h1>
           <Swiper
