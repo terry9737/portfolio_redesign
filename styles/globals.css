@@ -24,7 +24,7 @@
     @apply h-full w-full bg-gray-500 absolute px-2 flex flex-col items-center justify-center;
   }
   .website_text {
-    @apply text-sm lg:text-lg text-center h-full text-white;
+    @apply text-sm lg:text-lg text-center h-full text-gray-100 overflow-hidden;
   }
 }
 .flip-card {

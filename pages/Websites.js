@@ -15,6 +15,7 @@ import {
   fourthText,
   fourthsubText,
 } from "../comps/Websites/WebSites";
+import Particle from "../comps/particles/particles";
 const WebSites = () => {
   const controlsOne = useAnimation();
   const controlsTwo = useAnimation();
@@ -37,6 +38,7 @@ const WebSites = () => {
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-10 bg-header-default dark:bg-dark-mainBackground">
           {/* one */}
+
           <motion.section
             onHoverStart={() => {
               controlsOne.start("active");
@@ -69,24 +71,27 @@ const WebSites = () => {
               variants={firstContainer}
               initial="hidden"
               animate={controlsOne}
-              className="website_box"
+              className="website_box relative"
             >
+              <div className="w-full h-full absolute z-0">
+                <Particle id={"0"} />
+              </div>
               <motion.h3
                 variants={firstText}
                 initial="hidden"
                 animate={controlsTwo}
-                className="text-white text-center my-3"
+                className="text-gray-50 font-semibold text-center my-3"
               >
-                item one
+                My Main Stack
               </motion.h3>
               <motion.p
                 variants={firstsubText}
                 initial="hidden"
                 animate={controlsThree}
-                className="website_text"
+                className="website_text z-10"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                My main focus is on React.js along with Next.js, which I use for
+                creating dynamic projects, together with TailwindCSS
               </motion.p>
             </motion.span>
           </motion.section>
@@ -123,13 +128,16 @@ const WebSites = () => {
               variants={secondContainer}
               initial="hidden"
               animate={controlsFour}
-              className="website_box"
+              className="website_box relative"
             >
+              <div className="w-full h-full absolute z-0">
+                <Particle id={"1"} />
+              </div>
               <motion.h3
                 variants={secondText}
                 initial="hidden"
                 animate={controlsFive}
-                className="text-white text-center my-3"
+                className="text-gray-50 font-semibold text-center my-3"
               >
                 item one
               </motion.h3>
@@ -137,14 +145,13 @@ const WebSites = () => {
                 variants={secondsubText}
                 initial="hidden"
                 animate={controlsSix}
-                className="website_text"
+                className="website_text z-10"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               </motion.p>
             </motion.span>
           </motion.section>
-
           <motion.section
             onHoverStart={() => {
               controlsSeven.start("active");
@@ -177,13 +184,16 @@ const WebSites = () => {
               variants={thirdContainer}
               initial="hidden"
               animate={controlsSeven}
-              className="website_box"
+              className="website_box relative"
             >
+              <div className="w-full h-full absolute z-0">
+                <Particle id={"2"} />
+              </div>
               <motion.h3
                 variants={thirdText}
                 initial="hidden"
                 animate={controlsEight}
-                className="text-white text-center my-3"
+                className="text-gray-50 font-semibold text-center my-3"
               >
                 item one
               </motion.h3>
@@ -191,14 +201,13 @@ const WebSites = () => {
                 variants={thirdsubText}
                 initial="hidden"
                 animate={controlsNine}
-                className="website_text"
+                className="website_text z-10"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               </motion.p>
             </motion.span>
           </motion.section>
-
           <motion.section
             onHoverStart={() => {
               controlsTen.start("active");
@@ -231,13 +240,16 @@ const WebSites = () => {
               variants={fourthContainer}
               initial="hidden"
               animate={controlsTen}
-              className="website_box"
+              className="website_box relative"
             >
+              <div className="w-full h-full absolute z-0">
+                <Particle id={"3"} />
+              </div>
               <motion.h3
                 variants={fourthText}
                 initial="hidden"
                 animate={controlsEleven}
-                className="text-white text-center my-3"
+                className="text-gray-50 font-semibold text-center my-3"
               >
                 item one
               </motion.h3>
@@ -245,7 +257,7 @@ const WebSites = () => {
                 variants={fourthsubText}
                 initial="hidden"
                 animate={controlsTwelwe}
-                className="website_text"
+                className="website_text z-10"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
