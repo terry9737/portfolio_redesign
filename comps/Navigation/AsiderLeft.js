@@ -40,7 +40,7 @@ const AsiderLeft = () => {
         <Skills />
       </Wrap>
 
-      <section className="flex justify-center items-center pt-10">
+      <div className="flex justify-center items-center pt-10">
         <a
           download="cv"
           href="./cv.pdf"
@@ -49,7 +49,7 @@ const AsiderLeft = () => {
         >
           download cv
         </a>
-      </section>
+      </div>
     </motion.nav>
   );
 };

@@ -18,7 +18,7 @@ const AsiderHeader = () => {
     {
       image: <FaInbox />,
       id: 2,
-      link: "mailto:adriangorgos@gmail.com?subject=Adrian Gorgos Frontend",
+      link: "mailto:adriangorgos@gmail.com?subject=Adrian&nbsp;Gorgos&nbsp;Frontend",
     },
   ];
   return (
