@@ -23,7 +23,7 @@ const AsiderHeader = () => {
   ];
   return (
     <header className="flex flex-col items-center border-b-2 border-gray-400 dark:border-gray-300 border-opacity-40">
-      <section className="w-40 h-40 mb-5 sm:w-52 sm:h-52 rounded-full relative">
+      <div className="w-40 h-40 mb-5 sm:w-52 sm:h-52 rounded-full relative">
         <Image
           src={avatar}
           alt="avatar"
@@ -38,7 +38,7 @@ const AsiderHeader = () => {
           animate="visible"
           className="h-5 w-5 bg-green-400 dark:bg-green-600 absolute bottom-2 right-5 sm:bottom-2 sm:right-9 rounded-full"
         ></motion.span>
-      </section>
+      </div>
       <h3 className="font-medium text-xl dark:text-gray-300">Gorgos Adrian</h3>
       <p className="text-navbar-default text-sm mb-2 dark:text-gray-500">
         Front End Developer
