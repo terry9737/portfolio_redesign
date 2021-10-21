@@ -9,7 +9,10 @@ const Header = () => {
       <Container>
         <div className="flex flex-col sm:flex-row items-center justify-center py-7 overflow-hidden shadow-md">
           <div className="flex flex-col items-start justify-center">
-            <Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30}>
+            <Typist
+              cursor={{ hideWhenDone: true, show: false }}
+              avgTypingDelay={30}
+            >
               <h1 className="text-4xl sm:text-5xl font-bold px-5 leading-tight z-20 text-left dark:text-gray-100">
                 I’m Gorgos Adrian{" "}
                 <span className="text-header-yellow z-20">Front – End</span>{" "}
