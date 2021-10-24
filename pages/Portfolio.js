@@ -9,7 +9,7 @@ const Portfolio = () => {
     <main className="bg-header-default dark:bg-dark-mainBackground pt-5 h-full">
       <Container>
         <PortfolioNav />
-        <div className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-5 sm:gap-20 overflow-hidden h-screen">
+        <div className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-5 sm:gap-20 overflow-hidden min-h-screen h-full">
           {menu.map((info) => {
             return (
               <PortfolioCard

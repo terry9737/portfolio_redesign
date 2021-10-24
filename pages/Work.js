@@ -7,7 +7,7 @@ const Work = () => {
       <motion.div
         initial={{ y: -500 }}
         animate={{ y: 0 }}
-        transition={{ type: "spring", bounce: 0.3, damping: 11 }}
+        transition={{ type: "tween", ease: "linear" }}
         className="h-screen"
       >
         <header className="p-4 bg-header-default dark:bg-dark-mainBackground">

@@ -21,9 +21,11 @@ const PortfolioCard = ({ title, body, url, image }) => {
         onMouseEnter={() => control.start("visible")}
         onMouseLeave={() => control.start("hidden")}
       >
-        <div className="w-full h-full">
-          <Image alt="img" src={image} className="z-10 relative" />
-        </div>
+        <a href={url} target="_blank" rel="noreferrer">
+          <div className="w-full h-full">
+            <Image alt="img" src={image} className="z-10 relative" />
+          </div>
+        </a>
         <a href={url} target="_blank" rel="noreferrer">
           <motion.span
             variants={variants}

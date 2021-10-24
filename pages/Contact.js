@@ -10,7 +10,7 @@ const Contact = () => {
     <motion.main
       initial={{ x: -500 }}
       animate={{ x: 0 }}
-      transition={{ type: "spring", bounce: 0.3, damping: 11 }}
+      transition={{ type: "tween" }}
       className="bg-header-default dark:bg-dark-mainBackground pt-5"
     >
       <Container>

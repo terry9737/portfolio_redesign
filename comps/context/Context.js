@@ -6,9 +6,9 @@ export const DataContext = createContext({});
 
 const DataProvider = ({ children }) => {
   const [selected, setSelected] = useState(0);
-
+  // const [page,setPage] = useState(0)
   const clickHandler = (id) => {
-    localStorage.setItem("slide", id);
+    // localStorage.setItem("slide", id);
     setSelected(id);
   };
   // ! left and right asides

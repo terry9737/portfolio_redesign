@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <Container>
+    <Container darkfix={false}>
       <motion.div
         className="h-full"
-        initial={{ y: -500 }}
+        initial={{ y: "-20vh" }}
         animate={{ y: 0 }}
-        transition={{ type: "spring", bounce: 0.3, damping: 11 }}
+        transition={{ type: "tween", ease: "linear" }}
       >
         <header className="p-4 bg-header-default dark:bg-dark-mainBackground">
           <h1 className="text-center text-4xl font-medium mb-3 sm:mb-4 lg:mb-6 dark:text-gray-200">
