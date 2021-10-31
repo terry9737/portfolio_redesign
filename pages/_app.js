@@ -10,10 +10,10 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" enableSystem={false}>
-      <Head>
+      {/* <Head>
         <title>Home</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      </Head> */}
       <DataProvider>
         <div className="bg-header-default dark:bg-dark-mainBackground">
           <Navigation />

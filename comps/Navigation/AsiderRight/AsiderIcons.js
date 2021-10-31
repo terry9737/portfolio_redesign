@@ -9,9 +9,7 @@ const AsiderIcons = () => {
   const { selected, setSelected, clickHandler } = useContext(DataContext);
   const router = useRouter();
   useEffect(() => {
-    // const slideId = JSON.parse(localStorage.getItem("slide"));
     setSelected(router.pathname);
-    // console.log(router.pathname);
   });
   return (
     <ul className="flex flex-col items-center justify-center space-y-10 h-screen icons_center">
