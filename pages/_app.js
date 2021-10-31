@@ -10,10 +10,18 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" enableSystem={false}>
-      {/* <Head>
-        <title>Home</title>
+      <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head> */}
+        <meta
+          name="description"
+          content="An interactive portfolio I created using Next.js"
+        />
+        <meta
+          name="keywords"
+          content="HTML, CSS, JavaScript, React, Next, Tailwind"
+        />
+        <meta name="author" content="Gorgos Adrian" />
+      </Head>
       <DataProvider>
         <div className="bg-header-default dark:bg-dark-mainBackground">
           <Navigation />
