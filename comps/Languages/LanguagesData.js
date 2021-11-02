@@ -40,7 +40,7 @@ export const info = [
   },
   {
     title: "Lopper 1.0",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nulla? Porro soluta assumenda dolorem eaque quia, quam exercitationem doloribus fugiat dolorum facilis et blanditiis consequatur. Odio laudantium quia dolore maiores.",
+    body: "A simple landing page created in React, SASS and Framer Motion",
     url: "https://agitated-fermi-0fa1d5.netlify.app/",
     category: "react",
     img: five,
